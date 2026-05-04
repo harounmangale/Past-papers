@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TUM Electrical Hub</title>
+    <style>
+        body { font-family: sans-serif; background-color: #f4f7f6; margin: 0; padding: 0; }
+        header { background-color: #1a237e; color: white; padding: 30px 15px; text-align: center; }
+        header h1 { margin: 0; font-size: 24px; }
+        .sub-text { margin: 5px 0; opacity: 0.9; font-size: 1rem; }
+        #searchInput { width: 85%; max-width: 400px; padding: 12px; border-radius: 25px; border: none; margin-top: 15px; outline: none; }
+        .container { padding: 20px; max-width: 600px; margin: 0 auto; }
+        .card { background: white; border-radius: 12px; padding: 20px; margin-bottom: 15px; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
+        .info h3 { margin: 0; color: #1a237e; font-size: 18px; }
+        .info p { margin: 5px 0 0; font-size: 14px; color: #666; }
+        .btn { background-color: #ff9800; color: white; text-decoration: none; padding: 10px 18px; border-radius: 8px; font-weight: bold; font-size: 14px; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Electrical Dept Hub</h1>
+        <p class="sub-text">BTEE Class of 2024</p>
+        <p style="font-size: 0.8rem; margin: 0;">Technical University of Mombasa</p>
+        <input type="text" id="searchInput" onkeyup="searchPapers()" placeholder="Search unit name...">
+    </header>
+
+    <div class="container" id="paperList">
+        <div class="card">
+            <div class="info">
+                <h3>Analogue Electronics</h3>
+                <p>Year: 2023 | Semester: 1</p>
+            </div>
+            <a href="papers/analogue.pdf" class="btn">View PDF</a>
+        </div>
+        <div class="card">
+            <div class="info">
+                <h3>Circuit Analysis</h3>
+                <p>Year: 2022 | Semester: 2</p>
+            </div>
+            <a href="papers/circuits.pdf" class="btn">View PDF</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
